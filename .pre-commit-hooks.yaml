@@ -1,7 +1,7 @@
 - id: dart-format
   name: Dart source code format
   entry: dart format
-  language: script
+  language: system
   args:
     - "--output=none"
     - "--set-exit-if-changed"
