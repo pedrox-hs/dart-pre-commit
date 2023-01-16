@@ -18,3 +18,4 @@
   language: system
   args: ["--apply"]
   types: [dart]
+  pass_filenames: false
