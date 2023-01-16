@@ -1,10 +1,8 @@
 # Dart pre-commit hooks
 
-Some Dart hooks for pre-commit.
+Some Dart hooks for [pre-commit](https://github.com/pre-commit/pre-commit).
 
 Can be used in Flutter projects.
-
-See also: https://github.com/pre-commit/pre-commit
 
 ### Using dart-pre-commit with pre-commit
 
@@ -12,7 +10,7 @@ Add this to your `.pre-commit-config.yaml`
 
 ```yaml
 - repo: https://github.com/pedrox-hs/flutter-pre-commit
-  rev: v1.0.0
+  rev: v1.0.0  # Use the ref you want to point at
   hooks:
   - id: dart-analyze
   # - id: ...
