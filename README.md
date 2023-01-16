@@ -10,7 +10,7 @@ Add this to your `.pre-commit-config.yaml`
 
 ```yaml
 - repo: https://github.com/pedrox-hs/flutter-pre-commit
-  rev: v1.0.0  # Use the ref you want to point at
+  rev: v1.1.0  # Use the ref you want to point at
   hooks:
   - id: dart-analyze
   # - id: ...
@@ -33,3 +33,12 @@ By default it just check for code format, to apply format use:
 
 #### `dart-fix`
 Apply automated fixes to Dart source code.
+
+#### `fvm-dart-analyze`
+Alternative for [`dart-analyze`](#dart-analyze) with FVM.
+
+#### `fvm-dart-format`
+Alternative for [`dart-format`](#dart-format) with FVM.
+
+#### `fvm-dart-fix`
+Alternative for [`dart-fix`](#dart-fix) with FVM.
