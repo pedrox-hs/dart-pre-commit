@@ -4,9 +4,17 @@
   language: system
   args: ["--output=none", "--set-exit-if-changed"]
   types: [dart]
+
 - id: dart-analyze
   name: Analyze Dart code
   entry: dart analyze
   language: system
   args: ["--fatal-infos", "--fatal-warnings"]
   files: (\.dart|pubspec\.yaml)$
+
+- id: dart-fix
+  name: Apply automated fixes to Dart source code
+  entry: dart fix
+  language: system
+  args: ["--apply"]
+  types: [dart]
