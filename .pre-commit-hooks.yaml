@@ -1,0 +1,8 @@
+- id: dart-format
+  name: Dart source code format
+  entry: dart format
+  language: script
+  args:
+    - "--output=none"
+    - "--set-exit-if-changed"
+  files: \.dart$
