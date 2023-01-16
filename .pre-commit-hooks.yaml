@@ -19,3 +19,25 @@
   args: ["--apply"]
   types: [dart]
   pass_filenames: false
+
+- id: fvm-dart-format
+  name: Dart source code format with FVM
+  entry: fvm dart format
+  language: system
+  args: ["--output=none", "--set-exit-if-changed"]
+  types: [dart]
+
+- id: fvm-dart-analyze
+  name: Analyze Dart code with FVM
+  entry: fvm dart analyze
+  language: system
+  args: ["--fatal-infos", "--fatal-warnings"]
+  files: (\.dart|pubspec\.yaml)$
+
+- id: fvm-dart-fix
+  name: Apply automated fixes to Dart source code with FVM
+  entry: fvm dart fix
+  language: system
+  args: ["--apply"]
+  types: [dart]
+  pass_filenames: false
