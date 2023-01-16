@@ -2,7 +2,11 @@
   name: Dart source code format
   entry: dart format
   language: system
-  args:
-    - "--output=none"
-    - "--set-exit-if-changed"
-  files: \.dart$
+  args: ["--output=none", "--set-exit-if-changed"]
+  types: [dart]
+- id: dart-analyze
+  name: Analyze Dart code
+  entry: dart analyze
+  language: system
+  args: ["--fatal-infos", "--fatal-warnings"]
+  files: (\.dart|pubspec\.yaml)$
